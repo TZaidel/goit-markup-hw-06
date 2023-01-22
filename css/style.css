@@ -558,7 +558,6 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding-right: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
@@ -566,16 +565,13 @@ footer {
   border-color: transparent;
   margin-left: 24px;
   margin-top: 33px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .foot-container-4 {
   position: relative;
-}
-.foot-icon {
-  position: absolute;
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .backdrop {

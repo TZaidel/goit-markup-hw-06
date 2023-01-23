@@ -519,6 +519,7 @@ footer {
 }
 .foot-cont {
   display: flex;
+  align-items: center;
 }
 .foot-container-1 {
   margin-right: 120px;
@@ -548,10 +549,10 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-}
-.foot-input::placeholder {
   padding-left: 16px;
+  color: #fff;
 }
+
 .btn-foot {
   width: 165px;
   height: 40px;
@@ -564,14 +565,15 @@ footer {
   border-radius: 4px;
   border-color: transparent;
   margin-left: 24px;
-  margin-top: 33px;
+
   padding-left: 24px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 .foot-container-4 {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .backdrop {
@@ -594,9 +596,7 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
+  padding: 24px;
 }
 .modal-close {
   width: 24px;
@@ -604,10 +604,15 @@ footer {
   border-radius: 50%;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  position: absolute;
-  right: 24px;
-  top: 24px;
+  display: block;
+  margin-left: auto;
+  position: relative;
 }
+.modal-close:hover {
+  background: #404bbf;
+  fill: #f4f4fd;
+}
+
 .modal-title {
   font-family: "Roboto";
   font-weight: 500;
@@ -616,8 +621,8 @@ footer {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 72px;
-  margin-bottom: 34px;
+  margin-top: 24px;
+  margin-bottom: 14px;
 }
 .modal-form {
   display: flex;
@@ -629,9 +634,9 @@ footer {
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 26px;
   padding-left: 38px;
   outline: none;
+  margin-bottom: 8px;
 }
 .modal-input:hover,
 .modal-input-focus {
@@ -641,7 +646,10 @@ footer {
 .modal-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
-
+.check-text > a {
+  text-decoration: underline;
+  color: var(--iris-color);
+}
 .input-name {
   font-size: 12px;
   line-height: 1.33;

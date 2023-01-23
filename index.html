@@ -426,28 +426,33 @@
             </li>
           </ul>
         </div>
-        <div class="foot-container-3">
-          <h3 class="foot-main-title">Subscribe</h3>
-          <input
-            type="email"
-            class="foot-input"
-            name="email"
-            placeholder="Email"
-          />
+        <div class="foot-container-4">
+          <div class="foot-container-3">
+            <h3 class="foot-main-title">Subscribe</h3>
+            <input
+              type="email"
+              class="foot-input"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <button type="submit" class="btn-foot">
+            Subscribe
+            <svg class="foot-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe-foot"></use>
+            </svg>
+          </button>
         </div>
-
-        <button type="submit" class="btn-foot">
-          Subscribe
-          <svg class="foot-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-subscribe-foot"></use>
-          </svg>
-        </button>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>x</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="x-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-x-black"></use>
+          </svg>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <label
@@ -470,7 +475,7 @@
             </span>
           </label>
 
-          <div class="modal-field">
+          <!-- <div class="modal-field">
             <label for="tel" class="input-name">Phone</label>
             <div class="input-wrap">
               <input
@@ -484,7 +489,7 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
-          </div>
+          </div> -->
 
           <label
             ><span class="input-name">Email</span>
@@ -515,7 +520,7 @@
               class="input-check visually-hidden"
             />
             <label for="privacy" class="check-text"
-              >I accept the terms and conditions of the
+              >I accept the terms and conditions of the&nbsp;
               <a href=""> Privacy Policy</a>
             </label>
           </div>
